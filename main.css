@@ -47,7 +47,7 @@ select{
 footer{
     width: 100%;
     margin-top: 6rem;
-    background-image: url("/resources/footer-shape.png");
+    background-image: url("resources/footer-shape.png");
     background-size: 100% 100%;
     background-repeat:no-repeat; 
     background-position:center;
@@ -265,7 +265,7 @@ footer{
     height: 30rem;
     left: 60%;
     top: -150px;
-    background-image: url('/resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
+    background-image: url('resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
 
 }
 #diamond-three{
@@ -273,7 +273,7 @@ footer{
     height: 60rem;
     left: 100%;
     top: -450px;
-    background-image: url('/resources/7541b3b8-15ce-11ed-861d-0242ac120002.png');
+    background-image: url('resources/7541b3b8-15ce-11ed-861d-0242ac120002.png');
 
 }
 #diamond-four{
@@ -281,14 +281,14 @@ footer{
     height: 50rem;
     left: 66%;
     top: 400px;
-    background-image: url('/resources/2c18b366-15ca-11ed-861d-0242ac120002.png'); 
+    background-image: url('resources/2c18b366-15ca-11ed-861d-0242ac120002.png'); 
 }
 #diamond-five{
     width: 20rem;
     height: 20rem;
     left: 50%;
     top: 300px;
-    background-image: url('/resources/d55dc602-15cd-11ed-861d-0242ac120002.png');
+    background-image: url('resources/d55dc602-15cd-11ed-861d-0242ac120002.png');
 }
 #diamond-six{
     width: 70rem;
@@ -301,21 +301,21 @@ footer{
     height: 30rem;
     left: -20%;
     top: 1100px;
-    background-image: url('/resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
+    background-image: url('resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
 }
 #diamond-eight{
     width: 20rem;
     height: 20rem;
     left: 13%;
     top: 1250px;
-    background-image: url('/resources/7541b3b8-15ce-11ed-861d-0242ac120002.png');
+    background-image: url('resources/7541b3b8-15ce-11ed-861d-0242ac120002.png');
 }
 #diamond-nine{
     width: 30rem;
     height: 30rem;
     left: -4%;
     top: 1550px;
-    background-image: url('/resources/2c18b366-15ca-11ed-861d-0242ac120002.png'); 
+    background-image: url('resources/2c18b366-15ca-11ed-861d-0242ac120002.png'); 
 }
 #diamond-ten{
     width: 13rem;
@@ -323,14 +323,14 @@ footer{
     border-radius: 60px;
     left: 25%;
     top: 1550px;
-    background-image: url('/resources/d55dc602-15cd-11ed-861d-0242ac120002.png');
+    background-image: url('resources/d55dc602-15cd-11ed-861d-0242ac120002.png');
 }
 #diamond-eleven{
     width: 20rem;
     height: 20rem;
     left: -10%;
     top: 2070px;
-    background-image: url('/resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
+    background-image: url('resources/a876bbae-15cc-11ed-861d-0242ac120002.png');
 }
 #diamond-twelve{
     width: 70rem;
@@ -453,16 +453,16 @@ footer{
     font-weight: 600;
 }
 #property-one{
-    background-image: url('/resources/360_F_279953994_TmVqT7CQhWQJRLXev4oFmv8GIZTgJF1d.jpg');
+    background-image: url('resources/360_F_279953994_TmVqT7CQhWQJRLXev4oFmv8GIZTgJF1d.jpg');
 }
 #property-two{
-    background-image: url('/resources/be70095bb95741d55520b48cdd35763ab3d2b093.jpg');
+    background-image: url('resources/be70095bb95741d55520b48cdd35763ab3d2b093.jpg');
 }
 #property-three{
-    background-image: url('/resources/eyJidWNrZXQiOiJzdGF0aWN3Iiwia2V5IjoiaW5tdWVibGVzXC9ncl92ZW5kb2FycmllbmRvX2.jfif');
+    background-image: url('resources/eyJidWNrZXQiOiJzdGF0aWN3Iiwia2V5IjoiaW5tdWVibGVzXC9ncl92ZW5kb2FycmllbmRvX2.jfif');
 }
 #property-four{
-    background-image: url('/resources/a6a1eae584b94688eb97286feb7748f4bd5ec6bf.jpg');
+    background-image: url('resources/a6a1eae584b94688eb97286feb7748f4bd5ec6bf.jpg');
 }
 #new_label{
     background-color: var(--lime);
