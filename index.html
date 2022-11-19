@@ -1,35 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="background-images.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="background-images.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
     <title>Unión Caribe Inmobiliaria</title>
-    <link rel="icon" href="resources/logo.svg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;750&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9398c2ffde.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="icon" href="resources/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;750&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9398c2ffde.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu.js"></script>
+  </head>
+  <body>
     <nav>
-        <div id="left-nav">
-            <img src="resources/logo.svg" alt="Union Caribe Inmobiliaria" id="logo">
-            <label class="title">Union Caribe <br>Inmobiliaria</label>
-        </div>
-        <div id="center-nav">
-            <label href="" class="selected nav-option">Inicio</label>
-            <label href="" class="nav-option">Compra</label>
-            <label href="" class="nav-option">Vende</label>
-            <label href="" class="nav-option">Nosotros</label>
-        </div>
-        <div id="space-nav"></div>
-        <div id="right-nav">
-            <input type="button" value="Contacto" class="button" name="" id="contact">
-        </div>
+      <div id="left-nav">
+        <img
+          src="resources/logo.svg"
+          alt="Union Caribe Inmobiliaria"
+          id="logo"
+        />
+        <label class="title">Union Caribe <br />Inmobiliaria</label>
+      </div>
+      <div id="hidden-nav" class="hidden">
+        <span href="" class="selected nav-option">Inicio</span>
+        <span href="" class="nav-option">Compra</span>
+        <span href="" class="nav-option">Vende</span>
+        <span href="" class="nav-option" id="last">Nosotros</span>
+      </div>
+      <div id="space-nav"></div>
+      <div id="right-nav">
+        <input
+          type="button"
+          value="Contacto"
+          class="button"
+          name=""
+          id="contact"
+        />
+      </div>
+      <i
+        class="fa-solid fa-circle-chevron-down menu show"
+        id="open-menu"
+        onclick="openMenu()"
+      ></i>
+      <i
+        class="fa-solid fa-circle-xmark menu hidden"
+        id="close-menu"
+        onclick="closeMenu()"
+      ></i>
     </nav>
     <div class="diamond" id="diamond-one"></div>
     <div class="diamond" id="diamond-two"></div>
@@ -39,47 +68,58 @@
 
     <!---->
     <section id="primary-section">
-        <section id = primary-header>
-            <h1 >Te ayudamos a escoger la mejor opción para vivienda o negocio.</h1>
-            <p id="bio">Explora nuestras diferentes ofertas y escoge la que más se ajuste a tus necesidades</p>
-            <div class="company-info">
-                <input type="button" value="Más Información" class="button" name="" id="getinfo">
-                <div class="play-button">
-                    <i class="fa-solid fa-play"></i>
-                </div>
-                <label id="watch_video" for="">Ver video</label>
-            </div> 
-        </section>
-        <section id="search-section">
-            <div id="search-section-items">
-                <div class="drop-down-group">
-                <label for=""> Propiedad</label><br>
-                    <select name="Propiedad" id="search_by_property" class="drop-down">
-                        <option value="">En arriendo</option>
-                        <option value="">En venta</option>
-                        <option value="">En arriendo y venta</option>
-                    </select>
-                </div>
-                <div class="drop-down-group">
-                <label for=""> Tipo</label><br>
-                    <select name="Tipo" id="search_by_type" class="drop-down">
-                        <option value="">Vivienda</option>
-                        <option value="">Locales</option>
-                        <option value="">Lotes</option>
-                    </select>
-                </div>
-                <div class="drop-down-group">
-                    <label for=""> Ubicación</label><br>
-                    <select name="Ubicación" id="search_by_location" class="drop-down">
-                        <option value="">Cartagena</option>
-                        <option value="">Barranquilla</option>
-                        <option value="">Santa Marta</option>
-                        <option value="">Bogotá</option>
-                    </select>
-                </div>
-                <button  class="button" name="" id="btn-search">Buscar &nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-        </section>
+      <section id="primary-header">
+        <h1>Te ayudamos a escoger la mejor opción para vivienda o negocio.</h1>
+        <p id="bio">
+          Explora nuestras diferentes ofertas y escoge la que más se ajuste a
+          tus necesidades
+        </p>
+        <div class="company-info">
+          <input
+            type="button"
+            value="Más Información"
+            class="button"
+            name=""
+            id="getinfo"
+          />
+          <div class="play-button">
+            <i class="fa-solid fa-play"></i>
+          </div>
+          <label id="watch_video" for="">Ver video</label>
+        </div>
+      </section>
+      <section id="search-section">
+        <div id="search-section-items">
+          <div class="drop-down-group">
+            <label for=""> Propiedad</label><br />
+            <select name="Propiedad" id="search_by_property" class="drop-down">
+              <option value="">En arriendo</option>
+              <option value="">En venta</option>
+              <option value="">En arriendo y venta</option>
+            </select>
+          </div>
+          <div class="drop-down-group">
+            <label for=""> Tipo</label><br />
+            <select name="Tipo" id="search_by_type" class="drop-down">
+              <option value="">Vivienda</option>
+              <option value="">Locales</option>
+              <option value="">Lotes</option>
+            </select>
+          </div>
+          <div class="drop-down-group">
+            <label for=""> Ubicación</label><br />
+            <select name="Ubicación" id="search_by_location" class="drop-down">
+              <option value="">Cartagena</option>
+              <option value="">Barranquilla</option>
+              <option value="">Santa Marta</option>
+              <option value="">Bogotá</option>
+            </select>
+          </div>
+          <button class="button" name="" id="btn-search">
+            Buscar &nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </section>
     </section>
     <div class="diamond" id="diamond-six"></div>
     <div class="diamond" id="diamond-seven"></div>
@@ -88,204 +128,257 @@
     <div class="diamond" id="diamond-ten"></div>
     <div class="diamond" id="diamond-eleven"></div>
     <section id="secundary-section">
-        <section id = secundary-header>
-            <h1 >Tenemos justo lo que necesitas.</h1>
-            <p id="bio">Somos una empresa del sector de finca raíz ubicada en la ciudad de Cartagena. Con más de 5 años de experiencia brindando las mejores opciones de arriendo, compra y venta de inmuebles.</p>
-            <div class="company-info">
-                <input type="button" value="Más Información" class="button" name="" id="getinfo">
-            </div> 
-        </section>
+      <section id="secundary-header">
+        <h1>Tenemos justo lo que necesitas.</h1>
+        <p id="bio">
+          Somos una empresa del sector de finca raíz ubicada en la ciudad de
+          Cartagena. Con más de 5 años de experiencia brindando las mejores
+          opciones de arriendo, compra y venta de inmuebles.
+        </p>
+        <div class="company-info">
+          <input
+            type="button"
+            value="Más Información"
+            class="button"
+            name=""
+            id="getinfo"
+          />
+        </div>
+      </section>
     </section>
     <section id="third-section">
-        <div id="card_space">
-            <div class="card service" id="service_card_one">
-                <div id="card_icon">
-                    <i class="fa-solid fa-wallet"></i>
-                </div>
-                <label id="card_tittle" for="">Vende tu propiedad</label>
-                <p id="card_paragraph">Solicita una oferta y uno de nuestros expertos te contactará.</p>
-            </div>
-            <div class="card service" id="service_card_two">
-                <div id="card_icon">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-                <label id="card_tittle" for="">Compra o alquila una propiedad</label>
-                <p id="card_paragraph">Explora nuestras propiedades disponibles y escoge la que más te guste.</p>
-            </div>
-            <div class="card service" id="service_card_three">
-                <div id="card_icon">
-                    <i class="fa-solid fa-calculator"></i>
-                </div>
-                <label id="card_tittle" for="">Conoce el valor de tu propiedad</label>
-                <p id="card_paragraph">Utiliza nuestra herramienta virtual para conocer un valor aproximado.</p>
-            </div>
+      <div id="card_space">
+        <div class="card service" id="service_card_one">
+          <div id="card_icon">
+            <i class="fa-solid fa-wallet"></i>
+          </div>
+          <label id="card_tittle" for="">Vende tu propiedad</label>
+          <p id="card_paragraph">
+            Solicita una oferta y uno de nuestros expertos te contactará.
+          </p>
         </div>
+        <div class="card service" id="service_card_two">
+          <div id="card_icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <label id="card_tittle" for="">Compra o alquila una propiedad</label>
+          <p id="card_paragraph">
+            Explora nuestras propiedades disponibles y escoge la que más te
+            guste.
+          </p>
+        </div>
+        <div class="card service" id="service_card_three">
+          <div id="card_icon">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+          <label id="card_tittle" for="">Conoce el valor de tu propiedad</label>
+          <p id="card_paragraph">
+            Utiliza nuestra herramienta virtual para conocer un valor
+            aproximado.
+          </p>
+        </div>
+      </div>
     </section>
     <section id="fourth-section">
-        <h1>Propiedades añadidas recientemente</h1>
-        <section id="recently-properties">
-            <div class="card property">
-                <div class="property_picture" id="property-one"></div>
-                <div id="new_label"><label for="">NUEVO</label></div>
-                <div id="onSale_label"><label for="">EN VENTA</label></div>
+      <h1>Propiedades añadidas recientemente</h1>
+      <section id="recently-properties">
+        <div class="card property" id="property-one">
+          <div class="property_picture" id="property-one-img"></div>
+          <div id="new_label"><label for="">NUEVO</label></div>
+          <div id="onSale_label"><label for="">EN VENTA</label></div>
 
-                <label id="property_name">Casa Americana</label>
-                <p id="property_description">Vivienda tipo americana con 2 pisos, cochera, patio y terraza.</p>
-                <div class="property_details">
-                    <div id="property_rooms">
-                        <i class="fa-solid fa-bed"></i>
-                        3
-                    </div>
-                    <div id="property_baths">
-                        <i class="fa-solid fa-bath"></i>
-                        2
-                    </div>
-                    <div id="property_size">
-                        <i class="fa-solid fa-vector-square"></i>
-                        100m<sup>2</sup>
-                    </div>
-                </div>
-                <label id="property_price">$185.000.000</label>
+          <label id="property_name">Casa Americana</label>
+          <p id="property_description">
+            Vivienda tipo americana con 2 pisos, cochera, patio y terraza.
+          </p>
+          <div class="property_details">
+            <div id="property_rooms">
+              <i class="fa-solid fa-bed"></i>
+              3
             </div>
-            <div class="card property">
-                <div class="property_picture" id="property-two"></div>
-                <div id="new_label"><label for="">NUEVO</label></div>
-                <div id="rent_label"><label for="">ARRIENDO</label></div>
-                <label id="property_name">Penthouse Triplex</label>
-                <p id="property_description">Apartamento en piso 22 con habitaciones lujosas y zonas comunes.</p>
-                <div class="property_details">
-                    <div id="property_rooms">
-                        <i class="fa-solid fa-bed"></i>
-                        4
-                    </div>
-                    <div id="property_baths">
-                        <i class="fa-solid fa-bath"></i>
-                        6
-                    </div>
-                    <div id="property_size">
-                        <i class="fa-solid fa-vector-square"></i>
-                        290m<sup>2</sup>
-                    </div>
-                </div>
-                <label id="property_price">$14'000.000</label>
+            <div id="property_baths">
+              <i class="fa-solid fa-bath"></i>
+              2
             </div>
-            <div class="card property">
-                <div class="property_picture" id="property-three"></div>
-                <div id="new_label"><label for="">NUEVO</label></div>
-                <div id="rent_label"><label for="">ARRIENDO</label></div>
-                <label id="property_name">Local Comercial</label>
-                <p id="property_description">Ubicado en el centro comercial Mi Zona</p>
-                <div class="property_details">
-                    <div id="property_rooms">
-                        <i class="fa-solid fa-bed"></i>
-                        0
-                    </div>
-                    <div id="property_baths">
-                        <i class="fa-solid fa-bath"></i>
-                        1
-                    </div>
-                    <div id="property_size">
-                        <i class="fa-solid fa-vector-square"></i>
-                        214m<sup>2</sup>
-                    </div>
-                </div>
-                <label id="property_price">$4'000.000</label>
+            <div id="property_size">
+              <i class="fa-solid fa-vector-square"></i>
+              100m<sup>2</sup>
             </div>
-            <div class="card property">
-                <div class="property_picture" id="property-four"></div>
-                <div id="new_label"><label for="">NUEVO</label></div>
-                <div id="onSale_label"><label for="">EN VENTA</label></div>
-                <label id="property_name">Casa Suiza</label>
-                <p id="property_description">Vivienda estulo suiza ubicada en Lomas de Oro.</p>
-                <div class="property_details">
-                    <div id="property_rooms">
-                        <i class="fa-solid fa-bed"></i>
-                        3
-                    </div>
-                    <div id="property_baths">
-                        <i class="fa-solid fa-bath"></i>
-                        2
-                    </div>
-                    <div id="property_size">
-                        <i class="fa-solid fa-vector-square"></i>
-                        530m<sup>2</sup>
-                    </div>
-                </div>
-                <label id="property_price">225'000.000</label>
+          </div>
+          <label id="property_price">$185.000.000</label>
+        </div>
+        <div class="card property" id="property-two">
+          <div class="property_picture" id="property-two-img"></div>
+          <div id="new_label"><label for="">NUEVO</label></div>
+          <div id="rent_label"><label for="">ARRIENDO</label></div>
+          <label id="property_name">Penthouse Triplex</label>
+          <p id="property_description">
+            Apartamento en piso 22 con habitaciones lujosas y zonas comunes.
+          </p>
+          <div class="property_details">
+            <div id="property_rooms">
+              <i class="fa-solid fa-bed"></i>
+              4
             </div>
-        </section>
-        <label for="" id="viewProperty">Ver más propiedades <i class="fa-solid fa-arrow-right"></i></label>
+            <div id="property_baths">
+              <i class="fa-solid fa-bath"></i>
+              6
+            </div>
+            <div id="property_size">
+              <i class="fa-solid fa-vector-square"></i>
+              290m<sup>2</sup>
+            </div>
+          </div>
+          <label id="property_price">$14'000.000</label>
+        </div>
+        <div class="card property" id="property-three">
+          <div class="property_picture" id="property-three-img"></div>
+          <div id="new_label"><label for="">NUEVO</label></div>
+          <div id="rent_label"><label for="">ARRIENDO</label></div>
+          <label id="property_name">Local Comercial</label>
+          <p id="property_description">
+            Ubicado en el centro comercial Mi Zona
+          </p>
+          <div class="property_details">
+            <div id="property_rooms">
+              <i class="fa-solid fa-bed"></i>
+              0
+            </div>
+            <div id="property_baths">
+              <i class="fa-solid fa-bath"></i>
+              1
+            </div>
+            <div id="property_size">
+              <i class="fa-solid fa-vector-square"></i>
+              214m<sup>2</sup>
+            </div>
+          </div>
+          <label id="property_price">$4'000.000</label>
+        </div>
+        <div class="card property" id="property-four">
+          <div class="property_picture" id="property-four-img"></div>
+          <div id="new_label"><label for="">NUEVO</label></div>
+          <div id="onSale_label"><label for="">EN VENTA</label></div>
+          <label id="property_name">Casa Suiza</label>
+          <p id="property_description">
+            Vivienda estulo suiza ubicada en Lomas de Oro.
+          </p>
+          <div class="property_details">
+            <div id="property_rooms">
+              <i class="fa-solid fa-bed"></i>
+              3
+            </div>
+            <div id="property_baths">
+              <i class="fa-solid fa-bath"></i>
+              2
+            </div>
+            <div id="property_size">
+              <i class="fa-solid fa-vector-square"></i>
+              530m<sup>2</sup>
+            </div>
+          </div>
+          <label id="property_price">225'000.000</label>
+        </div>
+      </section>
+      <label for="" id="viewProperty"
+        >Ver más propiedades <i class="fa-solid fa-arrow-right"></i
+      ></label>
     </section>
     <section id="fifth-section">
-        <h2 class="section-header">¿Tienes alguna pregunta?
-            <br>Dejanos ayudarte
-        </h2>
-        <div id="client-email-section">
-            <input type="email" id="client-email" placeholder="micorreo@correo.com" >
-            <input type="button" value="Enviar" class="button" name="" id="sendMail">
-        </div>
-        <div class="diamond" id="diamond-twelve"></div>
+      <h2 class="section-header">
+        ¿Tienes alguna pregunta? <br />Dejanos ayudarte
+      </h2>
+      <div id="client-email-section">
+        <input
+          type="email"
+          id="client-email"
+          placeholder="micorreo@correo.com"
+        />
+        <input
+          type="button"
+          value="Enviar"
+          class="button"
+          name=""
+          id="sendMail"
+        />
+        <div class="button" id="alternative-sendMail"><i class="fa-solid fa-paper-plane"></i></div>
+      </div>
+      <div class="diamond" id="diamond-twelve"></div>
     </section>
     <footer>
-        <div id="footer-section">
-            <div class="footer-column" id="column-one">
-                <h2 class="seaction-header" id="company-name">Unión Caribe Inmobiliaria</h2>
-                <img class="white-logo" src="resources/white-logo.svg" alt="">
-            </div>
-            <div class="footer-column" id="column-two">
-                <label class="footer-nav-option" for="">Acceso rápido</label>
-                <hr align="left">
-                <label class="footer-nav-item" for="">Arquitectura</label><br>
-                <label class="footer-nav-item" for="">Agencias</label><br>
-                <label class="footer-nav-item" for="">Avalúo de propiedades</label><br>
-                <label class="footer-nav-item" for="">Construcciones</label><br>
-
-            </div>
-            <div class="footer-column" id="column-three">
-                <label class="footer-nav-option" for="">Ubicación</label>
-                <hr align="left">
-                <label class="footer-nav-item" for="">Cartagena</label><br>
-                <label class="footer-nav-item" for="">Barranquilla</label><br>
-                <label class="footer-nav-item" for="">Medellín</label><br>
-                <label class="footer-nav-item" for="">Bogotá DC</label><br>
-                <label class="footer-nav-item" for="">Calí</label><br>
-                <label class="footer-nav-item" for="">Santa Marta</label><br>
-
-            </div>
-            <div class="footer-column" id="column-four">
-                <label class="footer-nav-option" for="">Servicios</label><br>
-                <hr align="left">
-                <label class="footer-nav-item" for="">Venta</label><br>
-                <label class="footer-nav-item" for="">Arriendo</label><br>
-                <label class="footer-nav-item" for="">Compra</label><br>
-            </div>
-            <div class="footer-column" id="column-five">
-                <label class="footer-nav-option" for="">Contacto</label>
-                <hr align="left">
-                <label class="footer-nav-item" for="">+57 300 123 4567</label><br>
-                <label class="footer-nav-item" for="">contacto@unioncaribe.com.co</label><br>
-                <div id="social-media">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-tiktok"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
-            <div class="footer-column" id="column-space">
-            </div>
+      <div id="footer-section">
+        <div class="footer-column" id="column-one">
+          <h2 class="seaction-header" id="company-name">
+            Unión Caribe Inmobiliaria
+          </h2>
+          <img class="white-logo" src="resources/white-logo.svg" alt="" />
         </div>
+        <div class="footer-column" id="column-two">
+          <label class="footer-nav-option" for="">Acceso rápido</label>
+          <hr align="left" />
+          <label class="footer-nav-item" for="">Arquitectura</label><br />
+          <label class="footer-nav-item" for="">Agencias</label><br />
+          <label class="footer-nav-item" for="">Avalúo de propiedades</label
+          ><br />
+          <label class="footer-nav-item" for="">Construcciones</label><br />
+        </div>
+        <div class="footer-column" id="column-three">
+          <label class="footer-nav-option" for="">Ubicación</label>
+          <hr align="left" />
+          <label class="footer-nav-item" for="">Cartagena</label><br />
+          <label class="footer-nav-item" for="">Barranquilla</label><br />
+          <label class="footer-nav-item" for="">Medellín</label><br />
+          <label class="footer-nav-item" for="">Bogotá DC</label><br />
+          <label class="footer-nav-item" for="">Calí</label><br />
+          <label class="footer-nav-item" for="">Santa Marta</label><br />
+        </div>
+        <div class="footer-column" id="column-four">
+          <label class="footer-nav-option" for="">Servicios</label><br />
+          <hr align="left" />
+          <label class="footer-nav-item" for="">Venta</label><br />
+          <label class="footer-nav-item" for="">Arriendo</label><br />
+          <label class="footer-nav-item" for="">Compra</label><br />
+        </div>
+        <div class="footer-column" id="column-five">
+          <label class="footer-nav-option" for="">Contacto</label>
+          <hr align="left" />
+          <label class="footer-nav-item" for="">+57 300 123 4567</label><br />
+          <label class="footer-nav-item" for=""
+            >contacto@unioncaribe.com.co</label
+          ><br />
+          <div id="social-media">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-tiktok"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div id="social-media-two">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="footer-column" id="column-space"></div>
+      </div>
     </footer>
     <footer id="legal-info">
-        <div id="developer">
-            <label class="legal-item" for="">About</label><br>
-        <label class="legal-item" for="">Privacy & legal</label><br>
-        <label class="legal-item" for=""><a href="">Made with <i class="fa-solid fa-heart"></i> by <b>José Ríos</b></a></label><br>
-        </div>
-        <div id="copyright">
-            <label class="legal-item" for="">&copy; All Right Reserved by <b>Jupiter DC</b></label><br>
-        </div>
-        
+      <div id="developer">
+        <label class="legal-item hidden" for="">About</label><br />
+        <label class="legal-item hidden" for="">Privacy & legal</label><br />
+        <label class="legal-item" id="made" for=""
+          ><a href=""
+            >Made with <i class="fa-solid fa-heart"></i> by <b>José Ríos</b></a
+          ></label
+        ><br />
+      </div>
+      <div id="copyright">
+        <label class="legal-item" for=""
+          >&copy; All Right Reserved by <b>Jupiter DC</b></label
+        ><br />
+      </div>
     </footer>
-</body>
+  </body>
 </html>

@@ -1,16 +1,28 @@
-@media (max-width: 1366px) {
+:root {
+  --deep-blue: #0050fe;
+  --light-grey: #a0a0a0;
+  --dark-grey: #323232;
+  --very-light-blue: #f6f9fe;
+  --light-blue: #d6edff;
+  --lime: #14c38e;
+  --red: #b73e3e;
+  --yellow: #fec260;
+  --sm: 16px;
+  --md: 24px;
+  --lg: 32px;
+  --xlg: 48px;
+  --xxlg: 64px;
+}
+@media (max-width: 1500px) {
   h1 {
-    font-size: var(--xlg);
+    font-size: var(--lg);
   }
 
   .title {
-    display: none;
+    font-size: var(--lg);
+    margin-left: 20px;
+    margin-top: 20px;
   }
-
-  #logo {
-    display: flex;
-  }
-
   .button {
     height: 3.5rem;
   }
@@ -38,8 +50,8 @@
   }
 
   #diamond-four {
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
     left: 67%;
     top: 350px;
   }
@@ -49,13 +61,14 @@
     height: 15rem;
     left: 50%;
     top: 300px;
+    border-radius: 60px;
   }
 
   #diamond-six {
     width: 70rem;
     height: 70rem;
-    left: -52%;
-    top: 1200px;
+    left: -62%;
+    top: 1000px;
   }
 
   #diamond-seven {
@@ -66,29 +79,36 @@
   }
 
   #diamond-eight {
-    width: 20rem;
-    height: 20rem;
-    left: 20%;
+    width: 15rem;
+    height: 15rem;
+    left: 15%;
     top: 1300px;
+    border-radius: 50px;
   }
 
   #diamond-nine {
-    width: 30rem;
-    height: 30rem;
-    left: -4%;
-    top: 1600px;
+    width: 25rem;
+    height: 25rem;
+    left: -3%;
+    top: 1550px;
   }
 
   #diamond-ten {
-    left: 38%;
-    top: 1600px;
+    left: 28%;
+    top: 1500px;
+    border-radius: 50px;
   }
 
   #diamond-eleven {
     left: -20%;
-    top: 2030px;
+    top: 1850px;
   }
-
+  #diamond-twelve {
+    width: 50rem;
+    height: 50rem;
+    left: 85%;
+    top: 2750px;
+  }
   #left-nav {
     width: 15%;
     display: flex;
@@ -106,9 +126,75 @@
     height: 8rem;
     font-size: var(--sm);
   }
+  #secundary-header {
+    left: 37%;
+    margin-top: 180px;
+    margin-bottom: 100px;
+    text-align: left;
+    position: relative;
+  }
+  .property {
+    width: 260px;
+  }
+  .property_picture {
+    width: 260px;
+    height: 180px;
+  }
+  #new_label {
+    left: 190px;
+  }
+  .service {
+    margin: 20px;
+  }
+  #property_price {
+    transform: scale(0.8);
+  }
+  #recently-properties {
+    width: 100%;
+    left: 0;
+  }
+  #fourth-section {
+    padding-left: 0;
+  }
+  #fourth-section h1 {
+    padding-left: 70px;
+  }
 }
-
-@media (max-width: 1000px) {
+/*******************************************************************/
+@media (max-width: 1100px) {
+  .button {
+    transform: scale(0.8);
+  }
+  #contact {
+    margin-top: 10px;
+  }
+  .play-button {
+    width: 45px;
+    height: 45px;
+    margin: 0px;
+    margin-top: 5px;
+  }
+  .title {
+    display: none;
+  }
+  .drop-down-group option {
+    font-size: var(--sm);
+  }
+  .drop-down-group select {
+    font-size: var(--sm);
+  }
+  .nav-option {
+    font-size: var(--sm);
+    margin-top: 10px;
+  }
+  #watch_video {
+    font-size: var(--sm);
+    font-weight: 600;
+  }
+  #logo {
+    display: flex;
+    margin: 20px;
+  }
   #diamond-one {
     left: 70%;
   }
@@ -125,20 +211,71 @@
     width: 30rem;
     height: 30rem;
     left: 67%;
-    top: 200px;
+    top: 140px;
   }
 
   #diamond-five {
+    left: 50%;
+    top: 150px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50px;
+  }
+  #diamond-six {
+    width: 52rem;
+    height: 52rem;
+    left: -62%;
+    top: 750px;
+  }
+  #diamond-seven {
+    width: 25rem;
+    height: 25rem;
+    left: -20%;
+    top: 950px;
+  }
+  #diamond-eight {
     display: none;
   }
-
+  #diamond-nine {
+    display: none;
+  }
+  #diamond-ten {
+    top: 880px;
+    left: 15%;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 40px;
+  }
+  #diamond-eleven {
+    display: none;
+  }
+  #diamond-twelve {
+    width: 50rem;
+    height: 50rem;
+    left: 85%;
+    top: 2200px;
+  }
+  #search-section {
+    margin-top: 200px;
+  }
+  #secundary-header {
+    margin-top: 100px;
+  }
+  #third-section {
+    padding-top: 0px;
+  }
   #left-nav {
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
+  #card_tittle {
+    font-size: var(--sm);
+  }
+  #card_paragraph {
+    font-size: 14px;
+  }
   #center-nav {
     width: 50%;
     display: flex;
@@ -152,18 +289,334 @@
   #right-nav {
     width: 30%;
   }
-}
-
-@media (max-width: 750px) {
-  #logo {
+  #property-four {
     display: none;
   }
-
-  h1 {
-    font-size: var(--lg);
+  #property_name,
+  #property_price {
+    font-size: var(--sm);
+    transform: scale(1);
+  }
+  #company-name {
+    display: none;
+  }
+  .white-logo {
+    height: 100px;
+  }
+  #column-one {
+    width: 20%;
+    text-align: center;
   }
 
+  #column-two,
+  #column-three,
+  #column-four,
+  #column-five {
+    width: 18%;
+  }
+  #column-space {
+    width: 8%;
+  }
+  footer {
+    height: 600px;
+  }
+  #developer {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+/******************************************************************/
+@media (max-width: 800px) {
+  #logo {
+    display: flex;
+    margin: 20px;
+  }
   #primary-header {
     width: 50%;
+  }
+  #bio {
+    font-size: var(--sm);
+  }
+  #diamond-four {
+    top: 125px;
+  }
+  #diamond-five {
+    display: none;
+  }
+  #diamond-ten {
+    display: none;
+  }
+  .drop-down-group option {
+    font-size: 14px;
+  }
+  .drop-down-group select {
+    font-size: 14px;
+  }
+  #search-section {
+    height: 6rem;
+    font-size: 14px;
+  }
+  #secundary-header {
+    left: 40%;
+  }
+  .service {
+    margin: 20px;
+    width: 200px;
+  }
+  #card_space {
+    width: 90%;
+    padding-top: 130px;
+  }
+  .property {
+    height: 300px;
+    width: 200px;
+  }
+  .property_picture {
+    width: 200px;
+    height: 120px;
+  }
+  #property_description {
+    font-size: 14px;
+  }
+  #new_label {
+    left: 135px;
+    width: 90px;
+    height: 35px;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  #onSale_label,
+  #rent_label {
+    width: 90px;
+    height: 35px;
+    font-size: 12px;
+  }
+  #property_price {
+    font-size: 14px;
+  }
+  #client-email-section{
+    width: 600px;
+    height: 6rem;
+  }
+  #client-email{
+    font-size: var(--sm);
+    width: 300px;
+  }
+  h2{
+    font-size: var(--lg);
+  }
+  footer{
+    height: 500px;
+  }
+  #column-one{
+    display: none;
+  }
+  .footer-nav-option{
+    font-size: var(--sm);
+  }
+  .footer-nav-item,#developer,#copyright{
+    font-size: 12px;
+
+  }
+  .footer-column{
+    height: 200px;
+  }
+  #column-space{
+    display: none;
+  }
+  #footer-section{
+    top: 150px;
+  }
+}
+/******************************************************************/
+@media (max-width: 425px) {
+  #contact,#hidden-nav,#diamond-one,.hidden, #diamond-six,#search-section,#diamond-twelve{
+    display: none;
+  }
+  #center-nav{
+    display: grid;
+    grid-template-columns: (1);
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 10px;
+    height: 200px;
+    background-color: #00000060;
+    box-shadow: 0 11px 21px 1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+  }
+  #center-nav span{
+    width: 200px;
+    color: white;
+    margin-bottom: 10px;
+  }
+  #left-nav{
+    width: 90%;
+  }
+  .title{
+    display: flex;
+    font-size: var(--md);
+    margin: 0;
+    width: 150px;
+    color: var(--dark-grey);
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+  #logo{
+    margin: 10px;
+  }
+  .menu{
+    color: var(--deep-blue);
+    font-size: var(--lg);
+    margin: 10px;
+    cursor: pointer;
+  }
+  .show{
+    display: flex;
+  }
+  #primary-header, #secundary-header, #fourth-section{
+    padding: 0;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    left: 0;
+  }
+  #diamond-four, #diamond-seven{
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+    left: 60px;
+    top: 350px;
+  }
+  .company-info{
+    margin-top: 300px;
+  }
+  #secundary-header{
+    margin-top: 50px;
+  }
+  #diamond-seven{
+    top:970px
+  }
+  #getinfo{
+    margin: auto;
+  }
+  #card_space, #recently-properties{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .service{
+    margin: auto;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 150px;
+  }
+  #fourth-section h1{
+    margin: auto;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .property{
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  #property-four{
+    display: block;
+  }
+  #client-email-section{
+    width: 350px;
+    height: 5rem;
+  }
+  #client-email{
+    font-size: 14px;
+    width: 150px;
+  }
+  #sendMail{
+    width: 120px;
+    font-size: var(--sm);
+  }
+  footer{
+    height: 300px;
+    
+  }
+  .footer-nav-item{
+    display: none;
+  }
+  .footer-nav-option{
+    font-size: 12px;
+  }
+  .footer-column{
+    height: 50px;
+  }
+  #social-media{
+    display: none;
+  }
+  #social-media-two{
+    display: absolute;
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+  #social-media-two i{
+    margin: 0px 20px;
+  }
+  #developer, #copyright{
+    width: 50%;
+    margin: auto;
+    padding: 0;
+  }
+  .legal-item{
+    margin: auto;
+    padding: 0;
+  }
+}
+/******************************************************************/
+@media (max-width: 375px) {
+  #diamond-four{
+    width: 250px;
+    height: 250px;
+    top: 400px;
+  }
+  #diamond-seven{
+    width: 250px;
+    height: 250px;
+    top: 1020px;
+  }
+  h2{
+    font-size: var(--md);
+  }
+  #viewProperty{
+    font-size: var(--sm);
+  }
+}
+/******************************************************************/
+@media (max-width: 320px){
+  #diamond-four, #diamond-seven{
+    width: 230px;
+    height: 230px;
+    left: 45px;
+  }
+  #card_space{
+    padding-top: 50px;
+  }
+  .service{
+    width: 250px;
+  }
+  #client-email-section{
+    width: 290px;
+  }
+  #client-email{
+    width: 140px;
+  }
+  #sendMail{
+    display: none;
+  }
+  #alternative-sendMail{
+    display: flex;
+  }
+  #social-media-two i{
+    margin: 0px 10px;
   }
 }

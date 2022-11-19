@@ -17,6 +17,8 @@
 html {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -181,7 +183,9 @@ footer {
   align-items: center;
   overflow: hidden;
 }
-
+.menu{
+    display: none;
+}
 .service {
   width: 360px;
   height: 200px;
@@ -246,9 +250,9 @@ footer {
 }
 
 .footer-nav-item {
-    display: flex;
+  display: flex;
 }
-  
+
 #footer-section {
   top: 250px;
   width: 100%;
@@ -499,7 +503,6 @@ footer {
   display: flex;
   position: relative;
   justify-content: space-evenly;
-  align-items: center;
   padding-top: 100px;
 }
 
@@ -593,40 +596,51 @@ footer {
   margin-right: 10px;
 }
 
-#legal-info{
-    background: none;
-    height: 50px;
-    display: flex;
-    margin: 0px;
-    background-color: var(--deep-blue);
-    color: #FFFFFF60;
-    text-decoration: none;
-    border-top-color: #FFFFFF60;;
-    border-top-width: 2px;
-    border-top-style: solid;
+#legal-info {
+  background: none;
+  height: 50px;
+  display: flex;
+  margin: 0px;
+  background-color: var(--deep-blue);
+  color: #ffffff60;
+  text-decoration: none;
+  border-top-color: #ffffff60;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
 
-.legal-item{
-    text-align: center;
-    padding-top: 15px;
+.legal-item {
+  text-align: center;
+  padding-top: 15px;
 }
-.legal-item:hover, #legal-info a:hover{
-    color: white;
+.legal-item:hover,
+#legal-info a:hover {
+  color: white;
 }
-#legal-info a{
-    text-decoration: none;
-    color: #FFFFFF60;
+#legal-info a {
+  text-decoration: none;
+  color: #ffffff60;
 }
-#developer{
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    padding-left: 15%;
-    padding-right: 15%;
-
+#developer {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 15%;
+  padding-right: 15%;
 }
-#copyright{
-    padding-left: 15%;
-    width: 30%;
-    display: flex;
+#copyright {
+  padding-left: 15%;
+  width: 30%;
+  display: flex;
+}
+#alternative-sendMail{
+    display: none;
+    width: 70px;
+    align-items: center;
+}
+#alternative-sendMail i{
+    margin: auto;
+}
+#social-media-two i{
+    margin: 0px 10px;
 }
