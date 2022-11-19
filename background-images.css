@@ -1,0 +1,47 @@
+/*DIAMONDS*/
+#diamond-two {
+  background-image: url("resources/a876bbae-15cc-11ed-861d-0242ac120002.png");
+}
+#diamond-three {
+  background-image: url("resources/7541b3b8-15ce-11ed-861d-0242ac120002.png");
+}
+#diamond-four {
+  background-image: url("resources/2c18b366-15ca-11ed-861d-0242ac120002.png");
+}
+#diamond-five {
+  background-image: url("resources/9a6e3150-15ca-11ed-861d-0242ac120002.png");
+}
+#diamond-seven {
+  background-image: url("resources/40bc7295-15ce-11ed-861d-0242ac120002.png");
+}
+#diamond-eight {
+  background-image: url("resources/915ac3e1-15ca-11ed-861d-0242ac120002.png");
+}
+#diamond-nine {
+  background-image: url("resources/71a68348-15cd-11ed-861d-0242ac120002.png");
+}
+#diamond-ten {
+  background-image: url("resources/147c0334-15ca-11ed-861d-0242ac120002.png");
+}
+#diamond-eleven {
+  background-image: url("resources/4f0c40bc-15ca-11ed-861d-0242ac120002.png");
+}
+
+/*PROPERTIES*/
+#property-one {
+  background-image: url("resources/360_F_279953994_TmVqT7CQhWQJRLXev4oFmv8GIZTgJF1d.jpg");
+}
+#property-two {
+  background-image: url("resources/be70095bb95741d55520b48cdd35763ab3d2b093.jpg");
+}
+#property-three {
+  background-image: url("resources/eyJidWNrZXQiOiJzdGF0aWN3Iiwia2V5IjoiaW5tdWVibGVzXC9ncl92ZW5kb2FycmllbmRvX2.jfif");
+}
+#property-four {
+  background-image: url("resources/a6a1eae584b94688eb97286feb7748f4bd5ec6bf.jpg");
+}
+
+/*OTHER ELEMENTS*/
+footer{
+    background-image: url("resources/footer-shape.png");
+}
