@@ -395,46 +395,53 @@
   #property_price {
     font-size: 14px;
   }
-  #client-email-section{
+  #client-email-section {
     width: 600px;
     height: 6rem;
   }
-  #client-email{
+  #client-email {
     font-size: var(--sm);
     width: 300px;
   }
-  h2{
+  h2 {
     font-size: var(--lg);
   }
-  footer{
+  footer {
     height: 500px;
   }
-  #column-one{
+  #column-one {
     display: none;
   }
-  .footer-nav-option{
+  .footer-nav-option {
     font-size: var(--sm);
   }
-  .footer-nav-item,#developer,#copyright{
+  .footer-nav-item,
+  #developer,
+  #copyright {
     font-size: 12px;
-
   }
-  .footer-column{
+  .footer-column {
     height: 200px;
   }
-  #column-space{
+  #column-space {
     display: none;
   }
-  #footer-section{
+  #footer-section {
     top: 150px;
   }
 }
 /******************************************************************/
 @media (max-width: 425px) {
-  #contact,#hidden-nav,#diamond-one,.hidden, #diamond-six,#search-section,#diamond-twelve{
+  #contact,
+  #hidden-nav,
+  #diamond-one,
+  .hidden,
+  #diamond-six,
+  #search-section,
+  #diamond-twelve {
     display: none;
   }
-  #center-nav{
+  #center-nav {
     display: grid;
     grid-template-columns: (1);
     position: absolute;
@@ -446,15 +453,15 @@
     box-shadow: 0 11px 21px 1px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
   }
-  #center-nav span{
+  #center-nav span {
     width: 200px;
     color: white;
     margin-bottom: 10px;
   }
-  #left-nav{
+  #left-nav {
     width: 90%;
   }
-  .title{
+  .title {
     display: flex;
     font-size: var(--md);
     margin: 0;
@@ -463,95 +470,104 @@
     margin-top: 20px;
     margin-left: 40px;
   }
-  #logo{
+  #logo {
     margin: 10px;
   }
-  .menu{
+  .menu {
     color: var(--deep-blue);
     font-size: var(--lg);
     margin: 10px;
     cursor: pointer;
   }
-  .show{
+  #open-menu, #close-menu{
+    display: block;
+  }
+  #opened-menu, #closed-menu{
+    display: none;
+  }
+  .show {
     display: flex;
   }
-  #primary-header, #secundary-header, #fourth-section{
+  #primary-header,
+  #secundary-header,
+  #fourth-section {
     padding: 0;
     margin: auto;
     width: 90%;
     text-align: center;
     left: 0;
   }
-  #diamond-four, #diamond-seven{
+  #diamond-four,
+  #diamond-seven {
     height: 300px;
     width: 300px;
     border-radius: 40px;
     left: 60px;
     top: 350px;
   }
-  .company-info{
+  .company-info {
     margin-top: 300px;
   }
-  #secundary-header{
+  #secundary-header {
     margin-top: 50px;
   }
-  #diamond-seven{
-    top:970px
+  #diamond-seven {
+    top: 970px;
   }
-  #getinfo{
+  #getinfo {
     margin: auto;
   }
-  #card_space, #recently-properties{
+  #card_space,
+  #recently-properties {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-  .service{
+  .service {
     margin: auto;
     margin-bottom: 20px;
     width: 300px;
     height: 150px;
   }
-  #fourth-section h1{
+  #fourth-section h1 {
     margin: auto;
     padding: 0;
     margin-top: 50px;
   }
-  .property{
+  .property {
     margin: auto;
     margin-bottom: 20px;
   }
-  #property-four{
+  #property-four {
     display: block;
   }
-  #client-email-section{
+  #client-email-section {
     width: 350px;
     height: 5rem;
   }
-  #client-email{
+  #client-email {
     font-size: 14px;
     width: 150px;
   }
-  #sendMail{
+  #sendMail {
     width: 120px;
     font-size: var(--sm);
   }
-  footer{
+  footer {
     height: 300px;
-    
   }
-  .footer-nav-item{
+  .footer-nav-item {
     display: none;
   }
-  .footer-nav-option{
+  .footer-nav-option {
     font-size: 12px;
   }
-  .footer-column{
+  .footer-column {
     height: 50px;
   }
-  #social-media{
+  #social-media {
     display: none;
   }
-  #social-media-two{
+  #social-media-two {
     display: absolute;
     position: absolute;
     top: 100px;
@@ -559,64 +575,66 @@
     justify-content: space-evenly;
     text-align: center;
   }
-  #social-media-two i{
+  #social-media-two i {
     margin: 0px 20px;
   }
-  #developer, #copyright{
+  #developer,
+  #copyright {
     width: 50%;
     margin: auto;
     padding: 0;
   }
-  .legal-item{
+  .legal-item {
     margin: auto;
     padding: 0;
+  }
+  h2 {
+    font-size: var(--md);
   }
 }
 /******************************************************************/
 @media (max-width: 375px) {
-  #diamond-four{
+  #diamond-four {
     width: 250px;
     height: 250px;
     top: 400px;
   }
-  #diamond-seven{
+  #diamond-seven {
     width: 250px;
     height: 250px;
     top: 1020px;
   }
-  h2{
-    font-size: var(--md);
-  }
-  #viewProperty{
+  #viewProperty {
     font-size: var(--sm);
   }
 }
 /******************************************************************/
-@media (max-width: 320px){
-  #diamond-four, #diamond-seven{
+@media (max-width: 320px) {
+  #diamond-four,
+  #diamond-seven {
     width: 230px;
     height: 230px;
     left: 45px;
   }
-  #card_space{
+  #card_space {
     padding-top: 50px;
   }
-  .service{
+  .service {
     width: 250px;
   }
-  #client-email-section{
+  #client-email-section {
     width: 290px;
   }
-  #client-email{
+  #client-email {
     width: 140px;
   }
-  #sendMail{
+  #sendMail {
     display: none;
   }
-  #alternative-sendMail{
+  #alternative-sendMail {
     display: flex;
   }
-  #social-media-two i{
+  #social-media-two i {
     margin: 0px 10px;
   }
 }

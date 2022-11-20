@@ -183,7 +183,7 @@ footer {
   align-items: center;
   overflow: hidden;
 }
-.menu{
+#open-menu,#closed-menu{
     display: none;
 }
 .service {
